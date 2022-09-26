@@ -25,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -47,30 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyA5oHHyhFXKkmXy3avD6Et6B9c3plT7zwI',
-    appId: '1:298047915450:web:13898c5b418295940d0983',
-    messagingSenderId: '298047915450',
-    projectId: 'doge-finances',
-    authDomain: 'doge-finances.firebaseapp.com',
-    storageBucket: 'doge-finances.appspot.com',
-    measurementId: 'G-GFSVERE9RS',
+    apiKey: 'AIzaSyB99YeRX011K3_KlD7Ym3PH9cMiRzGx0aw',
+    appId: '1:675699533615:web:8f29f6f4a8cdeada84a3da',
+    messagingSenderId: '675699533615',
+    projectId: 'owllet-1a544',
+    authDomain: 'owllet-1a544.firebaseapp.com',
+    storageBucket: 'owllet-1a544.appspot.com',
+    measurementId: 'G-4XBW2FTMHX',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBPSFe1BFupqpLfAKhyMtALxyaIiDVcok8',
-    appId: '1:298047915450:android:ed2ecb38ed5833170d0983',
-    messagingSenderId: '298047915450',
-    projectId: 'doge-finances',
-    storageBucket: 'doge-finances.appspot.com',
+    apiKey: 'AIzaSyDkliw75bvQ78P2m5dvI2wN801YJGNGSDs',
+    appId: '1:675699533615:android:8817a7d559d88b8284a3da',
+    messagingSenderId: '675699533615',
+    projectId: 'owllet-1a544',
+    storageBucket: 'owllet-1a544.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAOV_X-dJYlrsLt-1FxJ0cuI-liRBgkCWo',
-    appId: '1:298047915450:ios:6be32d2bbf8dda5f0d0983',
-    messagingSenderId: '298047915450',
-    projectId: 'doge-finances',
-    storageBucket: 'doge-finances.appspot.com',
-    iosClientId: '298047915450-1u4v3vqupt9p7ojkblphlsd2o3e9e5ht.apps.googleusercontent.com',
-    iosBundleId: 'com.hawkstudio.dogeFinances',
+    apiKey: 'AIzaSyB0twMOT14ueIPFyqgNQMrxrVHjYvNxrC8',
+    appId: '1:675699533615:ios:29e7f42c35221dcb84a3da',
+    messagingSenderId: '675699533615',
+    projectId: 'owllet-1a544',
+    storageBucket: 'owllet-1a544.appspot.com',
+    iosClientId: '675699533615-94r1mus2hj0j08a3aup2rrfv3rhr8mdi.apps.googleusercontent.com',
+    iosBundleId: 'com.example.owllet',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyB0twMOT14ueIPFyqgNQMrxrVHjYvNxrC8',
+    appId: '1:675699533615:ios:29e7f42c35221dcb84a3da',
+    messagingSenderId: '675699533615',
+    projectId: 'owllet-1a544',
+    storageBucket: 'owllet-1a544.appspot.com',
+    iosClientId: '675699533615-94r1mus2hj0j08a3aup2rrfv3rhr8mdi.apps.googleusercontent.com',
+    iosBundleId: 'com.example.owllet',
   );
 }
