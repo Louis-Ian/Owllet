@@ -15,7 +15,7 @@ class _SignupscreenState extends State<Signupscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: dogeMidnight,
+      backgroundColor: owlletMidnight,
       body: SafeArea(
         child: LayoutBuilder(builder: (context, constraints) {
           return SingleChildScrollView(

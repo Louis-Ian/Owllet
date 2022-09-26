@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'Doge Finances',
+        title: 'Owllet',
         initialRoute: '/',
         routes: {
           '/': (context) => const AuthenticationWrapper(),

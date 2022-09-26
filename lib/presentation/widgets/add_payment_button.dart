@@ -15,16 +15,14 @@ class _AddPaymentButtonState extends State<AddPaymentButton> {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      onPressed: () {
-
-      },
+      onPressed: () {},
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(defaultRadius)),
       ),
-      backgroundColor: dogeIce.withOpacity(0.8),
+      backgroundColor: owlletIce.withOpacity(0.8),
       child: Icon(
         CupertinoIcons.arrow_up_arrow_down,
-        color: dogeMidnight.withOpacity(0.9),
+        color: owlletMidnight.withOpacity(0.9),
       ),
     );
   }

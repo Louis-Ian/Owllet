@@ -17,8 +17,9 @@ class _TransactionItemState extends State<TransactionItem> {
     return Container(
         padding: const EdgeInsets.all(defaultPadding),
         decoration: BoxDecoration(
-            color: dogeBlack.withOpacity(0.2),
-            borderRadius: const BorderRadius.all(Radius.circular(defaultRadius))),
+            color: owlletBlack.withOpacity(0.2),
+            borderRadius:
+                const BorderRadius.all(Radius.circular(defaultRadius))),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           mainAxisSize: MainAxisSize.max,
@@ -30,8 +31,8 @@ class _TransactionItemState extends State<TransactionItem> {
             ),
             Expanded(
               child: Padding(
-                padding:
-                    const EdgeInsets.fromLTRB(defaultPadding, 0, defaultPadding, 0),
+                padding: const EdgeInsets.fromLTRB(
+                    defaultPadding, 0, defaultPadding, 0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -40,7 +41,7 @@ class _TransactionItemState extends State<TransactionItem> {
                       textAlign: TextAlign.left,
                       style: GoogleFonts.inter(
                         fontSize: 18,
-                        color: dogeIce,
+                        color: owlletIce,
                       ),
                     ),
                     Text(
@@ -48,7 +49,7 @@ class _TransactionItemState extends State<TransactionItem> {
                       textAlign: TextAlign.left,
                       style: GoogleFonts.inter(
                         fontSize: 18,
-                        color: dogeLilac,
+                        color: owlletLilac,
                       ),
                     ),
                   ],
@@ -72,7 +73,7 @@ class _TransactionItemState extends State<TransactionItem> {
                   textAlign: TextAlign.left,
                   style: GoogleFonts.inter(
                     fontSize: 14,
-                    color: dogeWhite,
+                    color: owlletWhite,
                   ),
                 ),
               ],

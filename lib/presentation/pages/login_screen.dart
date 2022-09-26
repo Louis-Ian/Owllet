@@ -15,7 +15,7 @@ class _LoginscreenState extends State<Loginscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: dogeMidnight,
+      backgroundColor: owlletMidnight,
       body: SafeArea(
         child: LayoutBuilder(
           builder: (context, constraints) {
@@ -27,7 +27,7 @@ class _LoginscreenState extends State<Loginscreen> {
                 child: IntrinsicHeight(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
-                    children:  [
+                    children: [
                       Expanded(
                         child: Center(
                           child: Container(

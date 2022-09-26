@@ -16,5 +16,4 @@ workflows:
   test:
     jobs:
       - flutter/unit_test:
-          app-dir: ./doge_finances/
           version: 3.0.0

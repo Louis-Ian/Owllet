@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "675699533615",
+    "project_id": "owllet-1a544",
+    "storage_bucket": "owllet-1a544.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675699533615:android:8817a7d559d88b8284a3da",
+        "android_client_info": {
+          "package_name": "com.example.owllet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675699533615-oj3hs14841eirav4e9bnr1qi0v2sb7h9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkliw75bvQ78P2m5dvI2wN801YJGNGSDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675699533615-oj3hs14841eirav4e9bnr1qi0v2sb7h9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -29,7 +29,7 @@ class _SignupComponentState extends State<SignupComponent> {
           "Sign Up",
           style: GoogleFonts.inter(
             fontSize: 30,
-            color: dogeWhite,
+            color: owlletWhite,
             fontWeight: FontWeight.w700,
           ),
         ),
@@ -42,11 +42,11 @@ class _SignupComponentState extends State<SignupComponent> {
             controller: emailTextController,
             decoration: InputDecoration(
               border: OutlineInputBorder(
-                borderSide: const BorderSide(color: dogeWhite, width: 2.0),
+                borderSide: const BorderSide(color: owlletWhite, width: 2.0),
                 borderRadius: BorderRadius.circular(defaultRadius),
               ),
               focusedBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: dogeLilac, width: 2.0),
+                borderSide: const BorderSide(color: owlletLilac, width: 2.0),
                 borderRadius: BorderRadius.circular(defaultRadius),
               ),
               constraints: const BoxConstraints(
@@ -55,13 +55,13 @@ class _SignupComponentState extends State<SignupComponent> {
               ),
               contentPadding: const EdgeInsets.only(left: 30),
               filled: true,
-              fillColor: dogeWhite,
-              focusColor: dogeWhite,
+              fillColor: owlletWhite,
+              focusColor: owlletWhite,
               hintText: 'email',
-              prefixIconColor: dogeMidnight,
+              prefixIconColor: owlletMidnight,
               prefixIcon: Icon(
                 FontAwesomeIcons.solidEnvelope,
-                color: dogeMidnight.withOpacity(0.4),
+                color: owlletMidnight.withOpacity(0.4),
                 size: 22,
               ),
             ),
@@ -76,11 +76,11 @@ class _SignupComponentState extends State<SignupComponent> {
             autocorrect: false,
             decoration: InputDecoration(
               border: OutlineInputBorder(
-                borderSide: const BorderSide(color: dogeWhite, width: 2.0),
+                borderSide: const BorderSide(color: owlletWhite, width: 2.0),
                 borderRadius: BorderRadius.circular(defaultRadius),
               ),
               focusedBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: dogeLilac, width: 2.0),
+                borderSide: const BorderSide(color: owlletLilac, width: 2.0),
                 borderRadius: BorderRadius.circular(defaultRadius),
               ),
               constraints: const BoxConstraints(
@@ -89,13 +89,13 @@ class _SignupComponentState extends State<SignupComponent> {
               ),
               contentPadding: const EdgeInsets.only(left: 30),
               filled: true,
-              fillColor: dogeWhite,
-              focusColor: dogeWhite,
+              fillColor: owlletWhite,
+              focusColor: owlletWhite,
               hintText: 'password',
-              prefixIconColor: dogeMidnight,
+              prefixIconColor: owlletMidnight,
               prefixIcon: Icon(
                 FontAwesomeIcons.lock,
-                color: dogeMidnight.withOpacity(0.4),
+                color: owlletMidnight.withOpacity(0.4),
                 size: 22,
               ),
             ),
@@ -110,7 +110,7 @@ class _SignupComponentState extends State<SignupComponent> {
                     emailTextController.text, passwordTextController.text);
               },
               style: ElevatedButton.styleFrom(
-                primary: dogeLilac,
+                primary: owlletLilac,
                 shape: const RoundedRectangleBorder(
                   borderRadius:
                       BorderRadius.all(Radius.circular(defaultRadius)),
@@ -120,7 +120,7 @@ class _SignupComponentState extends State<SignupComponent> {
                 "Register",
                 style: GoogleFonts.inter(
                   fontSize: 20,
-                  color: dogeBlack,
+                  color: owlletBlack,
                   fontWeight: FontWeight.w400,
                 ),
               )),
@@ -141,7 +141,7 @@ class _SignupComponentState extends State<SignupComponent> {
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    primary: dogeWhite,
+                    primary: owlletWhite,
                     shape: const RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.all(Radius.circular(defaultRadius)),
@@ -152,7 +152,7 @@ class _SignupComponentState extends State<SignupComponent> {
                     width: 30,
                     child: const Icon(
                       FontAwesomeIcons.google,
-                      color: dogeMidnight,
+                      color: owlletMidnight,
                       size: 28,
                     ),
                   ),
@@ -163,7 +163,7 @@ class _SignupComponentState extends State<SignupComponent> {
               //   child: ElevatedButton(
               //     onPressed: () {},
               //     style: ElevatedButton.styleFrom(
-              //       primary: dogeWhite,
+              //       primary: owlletWhite,
               //       shape: new RoundedRectangleBorder(
               //         borderRadius: BorderRadius.all(Radius.circular(defaultRadius)),
               //       ),
@@ -173,7 +173,7 @@ class _SignupComponentState extends State<SignupComponent> {
               //       width: 30,
               //       child: Icon(
               //         FontAwesomeIcons.github,
-              //         color: dogeMidnight,
+              //         color: owlletMidnight,
               //         size: 30,
               //       ),
               //     ),
@@ -184,7 +184,7 @@ class _SignupComponentState extends State<SignupComponent> {
               //   child: ElevatedButton(
               //     onPressed: () {},
               //     style: ElevatedButton.styleFrom(
-              //       primary: dogeWhite,
+              //       primary: owlletWhite,
               //       shape: new RoundedRectangleBorder(
               //         borderRadius: BorderRadius.all(Radius.circular(defaultRadius)),
               //       ),
@@ -194,7 +194,7 @@ class _SignupComponentState extends State<SignupComponent> {
               //       width: 30,
               //       child: Icon(
               //         FontAwesomeIcons.facebook,
-              //         color: dogeMidnight,
+              //         color: owlletMidnight,
               //         size: 30,
               //       ),
               //     ),
@@ -207,7 +207,7 @@ class _SignupComponentState extends State<SignupComponent> {
                     Navigator.pushNamed(context, '/home');
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: dogeWhite,
+                    primary: owlletWhite,
                     shape: const RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.all(Radius.circular(defaultRadius)),
@@ -218,7 +218,7 @@ class _SignupComponentState extends State<SignupComponent> {
                     width: 30,
                     child: const Icon(
                       FontAwesomeIcons.solidCircleUser,
-                      color: dogeMidnight,
+                      color: owlletMidnight,
                       size: 30,
                     ),
                   ),

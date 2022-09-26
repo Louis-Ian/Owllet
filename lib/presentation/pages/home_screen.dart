@@ -20,10 +20,10 @@ class _HomescreenState extends State<Homescreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: dogeMidnight,
+      backgroundColor: owlletMidnight,
       floatingActionButton: const Padding(
-          padding: EdgeInsets.fromLTRB(
-              0, 0, defaultPadding, 2 * defaultPadding),
+          padding:
+              EdgeInsets.fromLTRB(0, 0, defaultPadding, 2 * defaultPadding),
           child: AddPaymentButton()),
       body: SafeArea(
         child: ListView(children: [
@@ -53,7 +53,7 @@ class _HomescreenState extends State<Homescreen> {
                       defaultPadding, 2 * defaultPadding, 0),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: dogeCloudy.withOpacity(0.8),
+                      color: owlletCloudy.withOpacity(0.8),
                       borderRadius: const BorderRadius.all(
                           Radius.circular(defaultRadius)),
                     ),
@@ -91,8 +91,8 @@ class _HomescreenState extends State<Homescreen> {
                           begin: Alignment.topLeft,
                           end: Alignment.bottomCenter,
                           colors: [
-                            dogeCloudy.withOpacity(1.0),
-                            dogeCloudy.withOpacity(0.4)
+                            owlletCloudy.withOpacity(1.0),
+                            owlletCloudy.withOpacity(0.4)
                           ])),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -103,7 +103,7 @@ class _HomescreenState extends State<Homescreen> {
                         textAlign: TextAlign.left,
                         style: GoogleFonts.inter(
                           fontSize: 24,
-                          color: dogeIce,
+                          color: owlletIce,
                         ),
                       ),
                       const Padding(

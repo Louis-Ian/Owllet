@@ -16,21 +16,21 @@ class _BalanceComponentState extends State<BalanceComponent> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.fromLTRB(2*defaultPadding, 2*defaultPadding, 2*defaultPadding, 2*defaultPadding),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.center,
-
-          children: [
-            Text(
-              "Balanço Total",
-              textAlign: TextAlign.center,
-              style: GoogleFonts.inter(
-                fontSize: 16,
-                color: dogeIce.withOpacity(0.9),
-              ),
+      padding: const EdgeInsets.fromLTRB(2 * defaultPadding, 2 * defaultPadding,
+          2 * defaultPadding, 2 * defaultPadding),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            "Balanço Total",
+            textAlign: TextAlign.center,
+            style: GoogleFonts.inter(
+              fontSize: 16,
+              color: owlletIce.withOpacity(0.9),
             ),
-            Row(
+          ),
+          Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -39,14 +39,13 @@ class _BalanceComponentState extends State<BalanceComponent> {
                   textAlign: TextAlign.right,
                   style: GoogleFonts.inter(
                     fontSize: 36,
-                    color: dogeWhite,
+                    color: owlletWhite,
                     fontWeight: FontWeight.w700,
                   ),
                 )
-              ]
-            )
-          ],
-        ),
+              ])
+        ],
+      ),
     );
   }
 }

@@ -12,9 +12,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # defaults:
-    #   run:
-    #     working-directory: doge_finances
 
     steps:
       - uses: actions/checkout@v2
@@ -27,29 +24,26 @@ jobs:
           # channel: # optional, default is stable
 
       - name: Decode firebase properties
-        run: echo "${{secrets.FIREBASE_OPTIONS}}" > doge_finances/lib/firebase_options.dart
+        run: echo "${{secrets.FIREBASE_OPTIONS}}" > lib/firebase_options.dart
       - name: Decode key properties
-        run: echo "${{secrets.KEY_PROD}}" > doge_finances/android/key.properties
+        run: echo "${{secrets.KEY_PROD}}" > android/key.properties
       - name: Decode Keystore
         id: decode_keystore
         uses: timheuer/base64-to-file@v1.1
         with:
           fileName: 'upload-keystore.jks'
-          fileDir: 'doge_finances/android/'
+          fileDir: '/android/'
           encodedString: ${{secrets.KEYJKS_PROD}}
       
       - name: check keystore
-        run: ls -la doge_finances/android/
+        run: ls -la android/
 
       - run: flutter pub get
-        working-directory: doge_finances
 
       # - run: flutter test
-      #   working-directory: doge_finances
 
       # Build APK
       - run: flutter build apk
-        working-directory: doge_finances
       
       - uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
@@ -60,7 +54,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          artifacts: doge_finances/build/app/outputs/flutter-apk/app-release.apk
+          artifacts: build/app/outputs/flutter-apk/app-release.apk
           name: Release ${{ steps.get-latest-tag.outputs.tag }}
           tag: v0.1.0
           body: |

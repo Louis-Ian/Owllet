@@ -16,7 +16,7 @@ class UserIcon extends StatelessWidget {
       height: 48,
       width: 48,
       decoration: const BoxDecoration(
-        color: dogeCloudy,
+        color: owlletCloudy,
         borderRadius: BorderRadius.all(Radius.circular(8)),
       ),
       child: IconButton(
@@ -27,7 +27,7 @@ class UserIcon extends StatelessWidget {
         icon: const Icon(
           FontAwesomeIcons.solidUser,
           size: 34,
-          color: dogeLilac,
+          color: owlletLilac,
         ),
       ),
       // child: Center(
@@ -39,7 +39,7 @@ class UserIcon extends StatelessWidget {
       //       authService.signOut();
       //     },
       //     style: ElevatedButton.styleFrom(
-      //       primary: dogeCloudy,
+      //       primary: owlletCloudy,
       //       shape: RoundedRectangleBorder(
       //         borderRadius: BorderRadius.circular(8.0)
       //       ),
@@ -48,7 +48,7 @@ class UserIcon extends StatelessWidget {
       //     ),
       //     child: Icon(
       //       FontAwesomeIcons.solidUser,
-      //       color: dogeWhite.withOpacity(0.75),
+      //       color: owlletWhite.withOpacity(0.75),
       //       size: 34,
       //     ),
       //   ),
