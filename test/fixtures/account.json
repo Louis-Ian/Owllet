@@ -1,0 +1,36 @@
+{
+    "id": 7,
+    "title": "Wallet Account",
+    "balance": 60.00,
+    "color": {
+        "R": 222,
+        "G": 69,
+        "B": 140
+    },
+    "payments": {
+        "1": {
+            "id": 1,
+            "value": 10.00,
+            "origin": 7,
+            "destination": 3,
+            "description": "Transfer to account 3",
+            "date": "2018-01-01"
+        },
+        "2": {
+            "id": 2,
+            "value": 20.00,
+            "origin": 7,
+            "destination": null,
+            "description": "Expense",
+            "date": "2018-01-02"
+        },
+        "3": {
+            "id": 3,
+            "value": 30.00,
+            "origin": 0,
+            "destination": 7,
+            "description": "Deposit from account 0",
+            "date": "2018-01-03"
+        }
+    }
+}

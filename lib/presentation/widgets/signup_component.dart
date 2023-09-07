@@ -1,0 +1,236 @@
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+
+import '../../domain/entities/colors.dart';
+import '../../domain/entities/constants.dart';
+import '../../domain/repositories/authentication_service.dart';
+
+class SignupComponent extends StatefulWidget {
+  const SignupComponent({Key? key}) : super(key: key);
+
+  @override
+  _SignupComponentState createState() => _SignupComponentState();
+}
+
+class _SignupComponentState extends State<SignupComponent> {
+  @override
+  Widget build(BuildContext context) {
+    final TextEditingController emailTextController = TextEditingController();
+    final TextEditingController passwordTextController =
+        TextEditingController();
+
+    final authService = Provider.of<AuthenticationService>(context);
+
+    return Column(
+      children: [
+        Text(
+          "Sign Up",
+          style: GoogleFonts.inter(
+            fontSize: 30,
+            color: owlletWhite,
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        const SizedBox(
+          height: 3 * defaultPadding,
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: defaultPadding),
+          child: TextField(
+            controller: emailTextController,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderSide: const BorderSide(color: owlletWhite, width: 2.0),
+                borderRadius: BorderRadius.circular(defaultRadius),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: const BorderSide(color: owlletLilac, width: 2.0),
+                borderRadius: BorderRadius.circular(defaultRadius),
+              ),
+              constraints: const BoxConstraints(
+                maxHeight: 48,
+                maxWidth: 280,
+              ),
+              contentPadding: const EdgeInsets.only(left: 30),
+              filled: true,
+              fillColor: owlletWhite,
+              focusColor: owlletWhite,
+              hintText: 'email',
+              prefixIconColor: owlletMidnight,
+              prefixIcon: Icon(
+                FontAwesomeIcons.solidEnvelope,
+                color: owlletMidnight.withOpacity(0.4),
+                size: 22,
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: defaultPadding),
+          child: TextField(
+            controller: passwordTextController,
+            obscureText: true,
+            enableSuggestions: false,
+            autocorrect: false,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderSide: const BorderSide(color: owlletWhite, width: 2.0),
+                borderRadius: BorderRadius.circular(defaultRadius),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: const BorderSide(color: owlletLilac, width: 2.0),
+                borderRadius: BorderRadius.circular(defaultRadius),
+              ),
+              constraints: const BoxConstraints(
+                maxHeight: 48,
+                maxWidth: 280,
+              ),
+              contentPadding: const EdgeInsets.only(left: 30),
+              filled: true,
+              fillColor: owlletWhite,
+              focusColor: owlletWhite,
+              hintText: 'password',
+              prefixIconColor: owlletMidnight,
+              prefixIcon: Icon(
+                FontAwesomeIcons.lock,
+                color: owlletMidnight.withOpacity(0.4),
+                size: 22,
+              ),
+            ),
+          ),
+        ),
+        SizedBox(
+          width: 280,
+          height: 36,
+          child: ElevatedButton(
+              onPressed: () async {
+                await authService.createUserWithEmailAndPassword(
+                    emailTextController.text, passwordTextController.text);
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: owlletLilac,
+                shape: const RoundedRectangleBorder(
+                  borderRadius:
+                      BorderRadius.all(Radius.circular(defaultRadius)),
+                ),
+              ),
+              child: Text(
+                "Register",
+                style: GoogleFonts.inter(
+                  fontSize: 20,
+                  color: owlletBlack,
+                  fontWeight: FontWeight.w400,
+                ),
+              )),
+        ),
+        const SizedBox(
+          height: 3 * defaultPadding,
+        ),
+        SizedBox(
+          width: 280,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              const SizedBox(
+                width: 30 - defaultPadding,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: defaultPadding),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: owlletWhite,
+                    shape: const RoundedRectangleBorder(
+                      borderRadius:
+                          BorderRadius.all(Radius.circular(defaultRadius)),
+                    ),
+                  ),
+                  child: const SizedBox(
+                    height: 48,
+                    width: 30,
+                    child: Icon(
+                      FontAwesomeIcons.google,
+                      color: owlletMidnight,
+                      size: 28,
+                    ),
+                  ),
+                ),
+              ),
+              // Padding(
+              //   padding: const EdgeInsets.only(bottom: defaultPadding),
+              //   child: ElevatedButton(
+              //     onPressed: () {},
+              //     style: ElevatedButton.styleFrom(
+              //       primary: owlletWhite,
+              //       shape: new RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.all(Radius.circular(defaultRadius)),
+              //       ),
+              //     ),
+              //     child: Container(
+              //       height: 48,
+              //       width: 30,
+              //       child: Icon(
+              //         FontAwesomeIcons.github,
+              //         color: owlletMidnight,
+              //         size: 30,
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // Padding(
+              //   padding: const EdgeInsets.only(bottom: defaultPadding),
+              //   child: ElevatedButton(
+              //     onPressed: () {},
+              //     style: ElevatedButton.styleFrom(
+              //       primary: owlletWhite,
+              //       shape: new RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.all(Radius.circular(defaultRadius)),
+              //       ),
+              //     ),
+              //     child: Container(
+              //       height: 48,
+              //       width: 30,
+              //       child: Icon(
+              //         FontAwesomeIcons.facebook,
+              //         color: owlletMidnight,
+              //         size: 30,
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: defaultPadding),
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/home');
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: owlletWhite,
+                    shape: const RoundedRectangleBorder(
+                      borderRadius:
+                          BorderRadius.all(Radius.circular(defaultRadius)),
+                    ),
+                  ),
+                  child: const SizedBox(
+                    height: 48,
+                    width: 30,
+                    child: Icon(
+                      FontAwesomeIcons.solidCircleUser,
+                      color: owlletMidnight,
+                      size: 30,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 30 - defaultPadding,
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
