@@ -30,8 +30,7 @@ class _AccountInfoState extends State<AccountInfo> {
       style: ElevatedButton.styleFrom(
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(defaultRadius)),
-        ),
-        primary: _selected ? _accountColor.withOpacity(0.2) : _accountColor.withOpacity(1),
+        ), backgroundColor: _selected ? _accountColor.withOpacity(0.2) : _accountColor.withOpacity(1),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

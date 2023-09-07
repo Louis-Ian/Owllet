@@ -1,7 +1,6 @@
 import 'package:dartz/dartz.dart';
 
 import '../../core/errors/failures.dart';
-import '../entities/account.dart';
 import '../repositories/account_repository.dart';
 
 class GetAccounts {

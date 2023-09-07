@@ -14,7 +14,7 @@ class AuthenticationService {
       final credential = await _firebaseAuth.signInWithEmailAndPassword(
           email: email, password: password);
       return credential.user;
-    } on auth.FirebaseAuthException catch (e) {
+    } on auth.FirebaseAuthException {
       // TODO: treat exceptions
       return null;
     }
@@ -26,7 +26,7 @@ class AuthenticationService {
       final credential = await _firebaseAuth.createUserWithEmailAndPassword(
           email: email, password: password);
       return credential.user;
-    } on auth.FirebaseAuthException catch (e) {
+    } on auth.FirebaseAuthException {
       // TODO: treat exceptions
       return null;
     }

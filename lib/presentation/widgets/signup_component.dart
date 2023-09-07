@@ -110,7 +110,7 @@ class _SignupComponentState extends State<SignupComponent> {
                     emailTextController.text, passwordTextController.text);
               },
               style: ElevatedButton.styleFrom(
-                primary: owlletLilac,
+                backgroundColor: owlletLilac,
                 shape: const RoundedRectangleBorder(
                   borderRadius:
                       BorderRadius.all(Radius.circular(defaultRadius)),
@@ -141,16 +141,16 @@ class _SignupComponentState extends State<SignupComponent> {
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    primary: owlletWhite,
+                    backgroundColor: owlletWhite,
                     shape: const RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.all(Radius.circular(defaultRadius)),
                     ),
                   ),
-                  child: Container(
+                  child: const SizedBox(
                     height: 48,
                     width: 30,
-                    child: const Icon(
+                    child: Icon(
                       FontAwesomeIcons.google,
                       color: owlletMidnight,
                       size: 28,
@@ -207,16 +207,16 @@ class _SignupComponentState extends State<SignupComponent> {
                     Navigator.pushNamed(context, '/home');
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: owlletWhite,
+                    backgroundColor: owlletWhite,
                     shape: const RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.all(Radius.circular(defaultRadius)),
                     ),
                   ),
-                  child: Container(
+                  child: const SizedBox(
                     height: 48,
                     width: 30,
-                    child: const Icon(
+                    child: Icon(
                       FontAwesomeIcons.solidCircleUser,
                       color: owlletMidnight,
                       size: 30,

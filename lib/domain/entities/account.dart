@@ -8,7 +8,7 @@ class Account {
   final num id;
   double _balance;
   final Color color;
-  List<Transfer> _payments;
+  final List<Transfer> _payments;
 
   List<Transfer> get payments => _payments;
 

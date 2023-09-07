@@ -4,14 +4,14 @@ import '../../domain/entities/colors.dart';
 import '../../domain/entities/constants.dart';
 import '../widgets/login_component.dart';
 
-class Loginscreen extends StatefulWidget {
-  const Loginscreen({Key? key}) : super(key: key);
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({Key? key}) : super(key: key);
 
   @override
-  _LoginscreenState createState() => _LoginscreenState();
+  _LoginScreenState createState() => _LoginScreenState();
 }
 
-class _LoginscreenState extends State<Loginscreen> {
+class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +30,7 @@ class _LoginscreenState extends State<Loginscreen> {
                     children: [
                       Expanded(
                         child: Center(
-                          child: Container(
+                          child: SizedBox(
                             height: 360,
                             child: SizedBox(
                               height: 128,
@@ -54,11 +54,11 @@ class _LoginscreenState extends State<Loginscreen> {
                             top: Radius.circular(defaultRadius),
                           ),
                         ),
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                              0, 2 * defaultPadding, 0, 0),
+                        child: const Padding(
+                          padding:
+                              EdgeInsets.fromLTRB(0, 2 * defaultPadding, 0, 0),
                           child: Column(
-                            children: const [
+                            children: [
                               SizedBox(
                                 height: 20,
                               ),

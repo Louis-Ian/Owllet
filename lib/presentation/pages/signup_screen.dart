@@ -4,14 +4,14 @@ import '../../domain/entities/colors.dart';
 import '../../domain/entities/constants.dart';
 import '../widgets/signup_component.dart';
 
-class Signupscreen extends StatefulWidget {
-  const Signupscreen({Key? key}) : super(key: key);
+class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({Key? key}) : super(key: key);
 
   @override
-  _SignupscreenState createState() => _SignupscreenState();
+  _SignUpScreenState createState() => _SignUpScreenState();
 }
 
-class _SignupscreenState extends State<Signupscreen> {
+class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +29,7 @@ class _SignupscreenState extends State<Signupscreen> {
                   children: [
                     Expanded(
                       child: Center(
-                        child: Container(
+                        child: SizedBox(
                           height: 360,
                           child: SizedBox(
                             height: 128,
@@ -51,11 +51,11 @@ class _SignupscreenState extends State<Signupscreen> {
                           color: Colors.white.withOpacity(0.2),
                           borderRadius: const BorderRadius.vertical(
                               top: Radius.circular(defaultRadius))),
-                      child: Padding(
-                        padding: const EdgeInsets.fromLTRB(
-                            0, 2 * defaultPadding, 0, 0),
+                      child: const Padding(
+                        padding:
+                            EdgeInsets.fromLTRB(0, 2 * defaultPadding, 0, 0),
                         child: Column(
-                          children: const [
+                          children: [
                             SignupComponent(),
                           ],
                         ),

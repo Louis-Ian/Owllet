@@ -29,6 +29,13 @@
             {
               "client_id": "675699533615-oj3hs14841eirav4e9bnr1qi0v2sb7h9.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "675699533615-94r1mus2hj0j08a3aup2rrfv3rhr8mdi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.owllet"
+              }
             }
           ]
         }

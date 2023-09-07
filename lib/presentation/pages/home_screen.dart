@@ -9,14 +9,14 @@ import '../widgets/balance_component.dart';
 import '../widgets/transaction_item.dart';
 import '../widgets/user_icon.dart';
 
-class Homescreen extends StatefulWidget {
-  const Homescreen({Key? key}) : super(key: key);
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  _HomescreenState createState() => _HomescreenState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _HomescreenState extends State<Homescreen> {
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,9 +35,9 @@ class _HomescreenState extends State<Homescreen> {
                 // ignore: sized_box_for_whitespace
                 child: Container(
                   height: 48,
-                  child: Row(
+                  child: const Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: const [
+                    children: [
                       SizedBox(
                         width: 8.0,
                       ),

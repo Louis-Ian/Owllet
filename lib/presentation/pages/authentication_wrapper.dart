@@ -14,19 +14,18 @@ class AuthenticationWrapper extends StatelessWidget {
     final authService = Provider.of<AuthenticationService>(context);
 
     return StreamBuilder<User?>(
-      stream: authService.user,
-      builder: (_, AsyncSnapshot<User?> snapshot) {
-        if(snapshot.connectionState == ConnectionState.active){
-          final User? user = snapshot.data;
-          return user == null ? const Loginscreen() : const Homescreen();
-        } else {
-          return const Scaffold(
-            body: Center(
-              child: CircularProgressIndicator(),
-            ),
-          );
-        }
-      }
-    );
+        stream: authService.user,
+        builder: (_, AsyncSnapshot<User?> snapshot) {
+          if (snapshot.connectionState == ConnectionState.active) {
+            final User? user = snapshot.data;
+            return user == null ? const LoginScreen() : const HomeScreen();
+          } else {
+            return const Scaffold(
+              body: Center(
+                child: CircularProgressIndicator(),
+              ),
+            );
+          }
+        });
   }
 }
