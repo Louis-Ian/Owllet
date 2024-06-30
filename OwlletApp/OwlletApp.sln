@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwlletApp", "OwlletApp.csproj", "{AF331BCA-B89C-45D5-9270-CF5677975261}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF331BCA-B89C-45D5-9270-CF5677975261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF331BCA-B89C-45D5-9270-CF5677975261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF331BCA-B89C-45D5-9270-CF5677975261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF331BCA-B89C-45D5-9270-CF5677975261}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
